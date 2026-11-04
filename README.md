@@ -1,6 +1,6 @@
 # SpecMatch: Constraint-Aware Semantic Retrieval for E-Commerce Product Search
 
-SpecMatch is an MSc-level NLP research project investigating whether semantic product retrieval can improve search relevance while preserving explicit user constraints (colour, material, size, brand, compatibility).
+SpecMatch is NLP research project investigating whether semantic product retrieval can improve search relevance while preserving explicit user constraints (colour, material, size, brand, compatibility).
 
 ## Dataset: WANDS (Wayfair ANNotation Dataset)
 - Official repository: https://github.com/wayfair/WANDS
