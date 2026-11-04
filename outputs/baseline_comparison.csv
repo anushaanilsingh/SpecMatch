@@ -1,0 +1,4 @@
+model,retrieval_type,ndcg@10,mrr@10_exact,mrr@10_any,recall@10_exact,recall@10_any,judged_coverage@10,latency_sec
+BM25Okapi,lexical,0.6457,0.5469,0.8347,0.2718,0.0567,79.02,91.05
+all-MiniLM-L6-v2,dense_semantic,0.555,0.4327,0.8087,0.1753,0.0524,71.17,7.79
+"Hybrid (RRF, k=60)",hybrid_rank_fusion,0.6224,0.5191,0.8454,0.2689,0.0562,76.5,0.03

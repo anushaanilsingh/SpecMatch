@@ -1,0 +1,5158 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "stats": {
+      "total_queries": 480,
+      "queries_with_constraints": 119,
+      "total_constraints_extracted": 146,
+      "by_attribute": {
+        "color": 57,
+        "material": 40,
+        "size_category": 19,
+        "brand": 13,
+        "drawer_count": 2,
+        "dimension": 10,
+        "light_count": 3,
+        "piece_count": 2
+      }
+    }
+  },
+  "queries": {
+    "0": {
+      "query_id": 0,
+      "raw_query": "salon chair",
+      "query_class": "Massage Chairs",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "1": {
+      "query_id": 1,
+      "raw_query": "smart coffee table",
+      "query_class": "Coffee & Cocktail Tables",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "2": {
+      "query_id": 2,
+      "raw_query": "dinosaur",
+      "query_class": "Kids Wall D\u00e9cor",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "3": {
+      "query_id": 3,
+      "raw_query": "turquoise pillows",
+      "query_class": "Accent Pillows",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "color",
+          "original_phrase": "turquoise",
+          "normalized_value": "turquoise",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "4": {
+      "query_id": 4,
+      "raw_query": "chair and a half recliner",
+      "query_class": "Recliners",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "5": {
+      "query_id": 5,
+      "raw_query": "sofa with ottoman",
+      "query_class": "Sectionals",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "6": {
+      "query_id": 6,
+      "raw_query": "acrylic clear chair",
+      "query_class": "Dining Chairs",
+      "has_constraints": true,
+      "constraint_count": 2,
+      "constraints": [
+        {
+          "attribute": "color",
+          "original_phrase": "clear",
+          "normalized_value": "clear",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        },
+        {
+          "attribute": "material",
+          "original_phrase": "acrylic",
+          "normalized_value": "acrylic",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_material",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "7": {
+      "query_id": 7,
+      "raw_query": "driftwood mirror",
+      "query_class": "Wall & Accent Mirrors",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "color",
+          "original_phrase": "driftwood",
+          "normalized_value": "driftwood",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "8": {
+      "query_id": 8,
+      "raw_query": "home sweet home sign",
+      "query_class": "Wall D\u00e9cor",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "9": {
+      "query_id": 9,
+      "raw_query": "coffee table fire pit",
+      "query_class": "Outdoor Fireplaces",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "10": {
+      "query_id": 10,
+      "raw_query": "king poster bed",
+      "query_class": "Beds",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "size_category",
+          "original_phrase": "king",
+          "normalized_value": "king",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_size_category",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "11": {
+      "query_id": 11,
+      "raw_query": "ombre rug",
+      "query_class": "Area Rugs",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "12": {
+      "query_id": 12,
+      "raw_query": "large spoon and fork wall decor",
+      "query_class": "Wall D\u00e9cor",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "13": {
+      "query_id": 13,
+      "raw_query": "outdoor privacy wall",
+      "query_class": "Fencing & Accessories",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "14": {
+      "query_id": 14,
+      "raw_query": "beds that have leds",
+      "query_class": "Beds",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "15": {
+      "query_id": 15,
+      "raw_query": "black 5 drawer dresser by guilford",
+      "query_class": "Dressers & Chests",
+      "has_constraints": true,
+      "constraint_count": 3,
+      "constraints": [
+        {
+          "attribute": "brand",
+          "original_phrase": "guilford",
+          "normalized_value": "guilford",
+          "operator": "EQUALS",
+          "extraction_method": "rule_by_prefix",
+          "confidence": 0.9
+        },
+        {
+          "attribute": "drawer_count",
+          "original_phrase": "5 drawer",
+          "normalized_value": 5,
+          "operator": "EQUALS",
+          "extraction_method": "regex_numeric_count",
+          "confidence": 0.95
+        },
+        {
+          "attribute": "color",
+          "original_phrase": "black",
+          "normalized_value": "black",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "16": {
+      "query_id": 16,
+      "raw_query": "blk 18x18 seat cushions",
+      "query_class": "Furniture Cushions",
+      "has_constraints": true,
+      "constraint_count": 2,
+      "constraints": [
+        {
+          "attribute": "dimension",
+          "original_phrase": "18x18",
+          "normalized_value": {
+            "width": 18.0,
+            "depth": 18.0
+          },
+          "operator": "APPROX_EQUALS",
+          "extraction_method": "regex_2d_dimensions",
+          "confidence": 0.95
+        },
+        {
+          "attribute": "color",
+          "original_phrase": "blk",
+          "normalized_value": "black",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "17": {
+      "query_id": 17,
+      "raw_query": "closet storage with zipper",
+      "query_class": "Storage Drawers",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "18": {
+      "query_id": 18,
+      "raw_query": "chrome bathroom 4 light vanity light",
+      "query_class": "Vanity Lighting",
+      "has_constraints": true,
+      "constraint_count": 2,
+      "constraints": [
+        {
+          "attribute": "light_count",
+          "original_phrase": "4 light",
+          "normalized_value": 4,
+          "operator": "EQUALS",
+          "extraction_method": "regex_numeric_count",
+          "confidence": 0.95
+        },
+        {
+          "attribute": "color",
+          "original_phrase": "chrome",
+          "normalized_value": "chrome",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "19": {
+      "query_id": 19,
+      "raw_query": "gurney  slade 56",
+      "query_class": "Chandeliers",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "20": {
+      "query_id": 20,
+      "raw_query": "foutains with brick look",
+      "query_class": "Wallpaper",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "21": {
+      "query_id": 21,
+      "raw_query": "living curtains pearl",
+      "query_class": "Curtains & Drapes",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "22": {
+      "query_id": 22,
+      "raw_query": "light and navy blue decorative pillow",
+      "query_class": "Accent Pillows",
+      "has_constraints": true,
+      "constraint_count": 2,
+      "constraints": [
+        {
+          "attribute": "color",
+          "original_phrase": "navy",
+          "normalized_value": "navy",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        },
+        {
+          "attribute": "color",
+          "original_phrase": "blue",
+          "normalized_value": "blue",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "23": {
+      "query_id": 23,
+      "raw_query": "stoneford end tables white and wood",
+      "query_class": "End Tables",
+      "has_constraints": true,
+      "constraint_count": 2,
+      "constraints": [
+        {
+          "attribute": "color",
+          "original_phrase": "white",
+          "normalized_value": "white",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        },
+        {
+          "attribute": "material",
+          "original_phrase": "wood",
+          "normalized_value": "wood",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_material",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "24": {
+      "query_id": 24,
+      "raw_query": "wood coffee table set by storage",
+      "query_class": "Living Room Table Sets",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "material",
+          "original_phrase": "wood",
+          "normalized_value": "wood",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_material",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "25": {
+      "query_id": 25,
+      "raw_query": "sunflower",
+      "query_class": "Wall Art",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "26": {
+      "query_id": 26,
+      "raw_query": "leather chairs",
+      "query_class": "Accent Chairs",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "material",
+          "original_phrase": "leather",
+          "normalized_value": "leather",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_material",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "27": {
+      "query_id": 27,
+      "raw_query": "outdoor welcome rug",
+      "query_class": "Door Mats",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "28": {
+      "query_id": 28,
+      "raw_query": "rooster decor",
+      "query_class": "Decorative Objects",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "29": {
+      "query_id": 29,
+      "raw_query": "bathroom vanity knobs",
+      "query_class": "Cabinet and Drawer Knobs",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "30": {
+      "query_id": 30,
+      "raw_query": "3 1/2 inch drawer pull",
+      "query_class": "Cabinet and Drawer Pulls",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "dimension",
+          "original_phrase": "3 1/2 inch",
+          "normalized_value": 3.5,
+          "operator": "APPROX_EQUALS",
+          "extraction_method": "regex_fractional_dimension",
+          "confidence": 0.9
+        }
+      ]
+    },
+    "31": {
+      "query_id": 31,
+      "raw_query": "burnt orange curtains",
+      "query_class": "Curtains & Drapes",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "color",
+          "original_phrase": "burnt orange",
+          "normalized_value": "orange",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "32": {
+      "query_id": 32,
+      "raw_query": "dark gray dresser",
+      "query_class": "Dressers & Chests",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "color",
+          "original_phrase": "gray",
+          "normalized_value": "gray",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "33": {
+      "query_id": 33,
+      "raw_query": "non slip shower floor tile",
+      "query_class": "Floor & Wall Tile",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "34": {
+      "query_id": 34,
+      "raw_query": "bar stool with backrest",
+      "query_class": "Bar Stools",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "35": {
+      "query_id": 35,
+      "raw_query": "enclosed shoe rack",
+      "query_class": "Shoe Storage",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "36": {
+      "query_id": 36,
+      "raw_query": "laundry basket with wheels",
+      "query_class": "Hampers & Baskets",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "37": {
+      "query_id": 37,
+      "raw_query": "bar stool 24 inches height",
+      "query_class": "Bar Stools",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "dimension",
+          "original_phrase": "24 inches",
+          "normalized_value": 24.0,
+          "operator": "APPROX_EQUALS",
+          "extraction_method": "regex_linear_dimension",
+          "confidence": 0.9
+        }
+      ]
+    },
+    "38": {
+      "query_id": 38,
+      "raw_query": "calvin patio chair",
+      "query_class": "Patio Lounge Chairs",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "39": {
+      "query_id": 39,
+      "raw_query": "door jewelry organizer",
+      "query_class": "Jewelry Armoires",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "40": {
+      "query_id": 40,
+      "raw_query": "elegant executive chair",
+      "query_class": "Office Chairs",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "41": {
+      "query_id": 41,
+      "raw_query": "closet pull out valet rod",
+      "query_class": "Closet Organizer Accessories",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "42": {
+      "query_id": 42,
+      "raw_query": "toddler couch fold out",
+      "query_class": "Kids Chairs",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "43": {
+      "query_id": 43,
+      "raw_query": "solid teak end table",
+      "query_class": "End Tables",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "44": {
+      "query_id": 44,
+      "raw_query": "chrome shower head and valve",
+      "query_class": "Shower Faucets & Systems",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "color",
+          "original_phrase": "chrome",
+          "normalized_value": "chrome",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "45": {
+      "query_id": 45,
+      "raw_query": "70s inspired furniture",
+      "query_class": "Wall Art",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "46": {
+      "query_id": 46,
+      "raw_query": "beach blue headboard",
+      "query_class": "Headboards",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "color",
+          "original_phrase": "blue",
+          "normalized_value": "blue",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "47": {
+      "query_id": 47,
+      "raw_query": "porcelain loaf pan",
+      "query_class": "Bread & Loaf Pans",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "material",
+          "original_phrase": "porcelain",
+          "normalized_value": "porcelain",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_material",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "48": {
+      "query_id": 48,
+      "raw_query": "arwen table lamp",
+      "query_class": "Table Lamps",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "49": {
+      "query_id": 49,
+      "raw_query": "moen matte black hooks",
+      "query_class": "Towel & Robe Hooks",
+      "has_constraints": true,
+      "constraint_count": 2,
+      "constraints": [
+        {
+          "attribute": "brand",
+          "original_phrase": "moen",
+          "normalized_value": "moen",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_known_brand",
+          "confidence": 0.95
+        },
+        {
+          "attribute": "color",
+          "original_phrase": "matte black",
+          "normalized_value": "black",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "50": {
+      "query_id": 50,
+      "raw_query": "tufted chair with gold legs",
+      "query_class": "Accent Chairs",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "color",
+          "original_phrase": "gold",
+          "normalized_value": "gold",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "51": {
+      "query_id": 51,
+      "raw_query": "kohen 5 drawer dresser",
+      "query_class": "Dressers & Chests",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "drawer_count",
+          "original_phrase": "5 drawer",
+          "normalized_value": 5,
+          "operator": "EQUALS",
+          "extraction_method": "regex_numeric_count",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "52": {
+      "query_id": 52,
+      "raw_query": "westling coffee table",
+      "query_class": "Coffee & Cocktail Tables",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "53": {
+      "query_id": 53,
+      "raw_query": "carolyn console table",
+      "query_class": "Sofa & Console Tables",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "54": {
+      "query_id": 54,
+      "raw_query": "wayfair sleep zippered",
+      "query_class": "Mattress Covers and Protectors",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "55": {
+      "query_id": 55,
+      "raw_query": "tollette teal outdoor rug",
+      "query_class": "Area Rugs",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "color",
+          "original_phrase": "teal",
+          "normalized_value": "teal",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "56": {
+      "query_id": 56,
+      "raw_query": "royal blue counter height chairs",
+      "query_class": "Bar Stools",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "color",
+          "original_phrase": "blue",
+          "normalized_value": "blue",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "57": {
+      "query_id": 57,
+      "raw_query": "jordanna solid wood rocking",
+      "query_class": "Patio Rockers & Gliders",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "material",
+          "original_phrase": "solid wood",
+          "normalized_value": "wood",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_material",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "58": {
+      "query_id": 58,
+      "raw_query": "medium size chandelier",
+      "query_class": "Chandeliers",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "59": {
+      "query_id": 59,
+      "raw_query": "broadway lever",
+      "query_class": "Door Levers",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "60": {
+      "query_id": 60,
+      "raw_query": "capricorn chest",
+      "query_class": "Dressers & Chests",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "61": {
+      "query_id": 61,
+      "raw_query": "overstreet rustic pub stools",
+      "query_class": "Bar Stools",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "62": {
+      "query_id": 62,
+      "raw_query": "7qt slow cooker",
+      "query_class": "Crock Pots & Slow Cookers",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "63": {
+      "query_id": 63,
+      "raw_query": "monthly calendar",
+      "query_class": "Memo Boards",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "64": {
+      "query_id": 64,
+      "raw_query": "zachary 72.5",
+      "query_class": "Bookcases",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "65": {
+      "query_id": 65,
+      "raw_query": "gnome fairy garden",
+      "query_class": "Garden Accents",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "66": {
+      "query_id": 66,
+      "raw_query": "novara pergola",
+      "query_class": "Pergolas",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "67": {
+      "query_id": 67,
+      "raw_query": "osgood mirror",
+      "query_class": "Wall & Accent Mirrors",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "68": {
+      "query_id": 68,
+      "raw_query": "nautical platters",
+      "query_class": "Serving Dishes & Platters",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "69": {
+      "query_id": 69,
+      "raw_query": "wall sconce with usb port",
+      "query_class": "Wall Sconces",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "70": {
+      "query_id": 70,
+      "raw_query": "annex dresser",
+      "query_class": "Dressers & Chests",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "71": {
+      "query_id": 71,
+      "raw_query": "infant girl crib bedding",
+      "query_class": "Crib Bedding Sets",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "72": {
+      "query_id": 72,
+      "raw_query": "fold in half table",
+      "query_class": "Folding Tables",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "73": {
+      "query_id": 73,
+      "raw_query": "certified international melamine",
+      "query_class": "Plates & Saucers",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "74": {
+      "query_id": 74,
+      "raw_query": "serta kleinmon",
+      "query_class": "Innerspring Mattresses",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "75": {
+      "query_id": 75,
+      "raw_query": "sheffield home bath set",
+      "query_class": "Bath Rugs & Mats",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "76": {
+      "query_id": 76,
+      "raw_query": "46 inch closet door",
+      "query_class": "Interior Doors",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "dimension",
+          "original_phrase": "46 inch",
+          "normalized_value": 46.0,
+          "operator": "APPROX_EQUALS",
+          "extraction_method": "regex_linear_dimension",
+          "confidence": 0.9
+        }
+      ]
+    },
+    "77": {
+      "query_id": 77,
+      "raw_query": "sancroft armchair",
+      "query_class": "Accent Chairs",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "78": {
+      "query_id": 78,
+      "raw_query": "dorel vanity",
+      "query_class": "Vanities",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "79": {
+      "query_id": 79,
+      "raw_query": "palram harmony greenhouses",
+      "query_class": "Awnings",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "80": {
+      "query_id": 80,
+      "raw_query": "7 draw white dresser",
+      "query_class": "Dressers & Chests",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "color",
+          "original_phrase": "white",
+          "normalized_value": "white",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "81": {
+      "query_id": 81,
+      "raw_query": "orren ellis l shape desk",
+      "query_class": "Desks",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "82": {
+      "query_id": 82,
+      "raw_query": "bathroom vanity with counter space",
+      "query_class": "Vanities",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "83": {
+      "query_id": 83,
+      "raw_query": "wall art fiji",
+      "query_class": "Wall Art",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "84": {
+      "query_id": 84,
+      "raw_query": "full metal bed rose gold",
+      "query_class": "Beds",
+      "has_constraints": true,
+      "constraint_count": 3,
+      "constraints": [
+        {
+          "attribute": "size_category",
+          "original_phrase": "full",
+          "normalized_value": "full",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_size_category",
+          "confidence": 0.95
+        },
+        {
+          "attribute": "color",
+          "original_phrase": "rose gold",
+          "normalized_value": "rose gold",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        },
+        {
+          "attribute": "material",
+          "original_phrase": "metal",
+          "normalized_value": "metal",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_material",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "85": {
+      "query_id": 85,
+      "raw_query": "3/4 size mattress",
+      "query_class": "Foam and Latex Mattresses",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "86": {
+      "query_id": 86,
+      "raw_query": "aloe vera plant pot",
+      "query_class": "Faux Plants and Trees",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "87": {
+      "query_id": 87,
+      "raw_query": "vlad modular sectional",
+      "query_class": "Sectionals",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "88": {
+      "query_id": 88,
+      "raw_query": "rose gold lounge",
+      "query_class": "Indoor Chaise Lounges",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "color",
+          "original_phrase": "rose gold",
+          "normalized_value": "rose gold",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "89": {
+      "query_id": 89,
+      "raw_query": "whimsical solar lights",
+      "query_class": "Landscape Lighting",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "90": {
+      "query_id": 90,
+      "raw_query": "filaret outdoor sofa",
+      "query_class": "Patio Sofas",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "91": {
+      "query_id": 91,
+      "raw_query": "industrial pipe dining  table",
+      "query_class": "Dining Tables",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "92": {
+      "query_id": 92,
+      "raw_query": "antique silver entry table",
+      "query_class": "Sofa & Console Tables",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "color",
+          "original_phrase": "silver",
+          "normalized_value": "silver",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "93": {
+      "query_id": 93,
+      "raw_query": "outdoor sectional dining",
+      "query_class": "Patio Sofas",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "94": {
+      "query_id": 94,
+      "raw_query": "kohler whitehaven farmhouse kitchen sink",
+      "query_class": "Kitchen Sinks",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "brand",
+          "original_phrase": "kohler",
+          "normalized_value": "kohler",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_known_brand",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "95": {
+      "query_id": 95,
+      "raw_query": "entertainment stand end table",
+      "query_class": "TV Stands & Entertainment Centers",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "96": {
+      "query_id": 96,
+      "raw_query": "bar room wall decor",
+      "query_class": "Wall D\u00e9cor",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "97": {
+      "query_id": 97,
+      "raw_query": "regner power loom red",
+      "query_class": "Area Rugs",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "color",
+          "original_phrase": "red",
+          "normalized_value": "red",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "98": {
+      "query_id": 98,
+      "raw_query": "gracie oaks 62 oller 14 ceiling fan",
+      "query_class": "Ceiling Fans",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "99": {
+      "query_id": 99,
+      "raw_query": "arched christmas tree",
+      "query_class": "Christmas Trees",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "100": {
+      "query_id": 100,
+      "raw_query": "tufted upholstered bed diamond",
+      "query_class": "Beds",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "101": {
+      "query_id": 101,
+      "raw_query": "48 in entry table with side by side drawer",
+      "query_class": "Sofa & Console Tables",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "brand",
+          "original_phrase": "side drawer",
+          "normalized_value": "side drawer",
+          "operator": "EQUALS",
+          "extraction_method": "rule_by_prefix",
+          "confidence": 0.9
+        }
+      ]
+    },
+    "102": {
+      "query_id": 102,
+      "raw_query": "flamingo",
+      "query_class": "Garden Statues",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "103": {
+      "query_id": 103,
+      "raw_query": "kitchen anti fatigue mats",
+      "query_class": "Kitchen Mats",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "104": {
+      "query_id": 104,
+      "raw_query": "flour and sugar containers",
+      "query_class": "Canisters & Jars",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "105": {
+      "query_id": 105,
+      "raw_query": "outdoor movie screen",
+      "query_class": "Projector Screens",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "106": {
+      "query_id": 106,
+      "raw_query": "bed risers",
+      "query_class": "Bed Accessories",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "107": {
+      "query_id": 107,
+      "raw_query": "front porch furniture sets",
+      "query_class": "Outdoor Conversation Sets",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "108": {
+      "query_id": 108,
+      "raw_query": "ayesha curry kitchen",
+      "query_class": "Cookware Sets",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "109": {
+      "query_id": 109,
+      "raw_query": "hillsby oriental rug",
+      "query_class": "Area Rugs",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "110": {
+      "query_id": 110,
+      "raw_query": "mila task chair",
+      "query_class": "Office Chairs",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "111": {
+      "query_id": 111,
+      "raw_query": "delta trinsic",
+      "query_class": "Bathroom Sink Faucets",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "brand",
+          "original_phrase": "delta",
+          "normalized_value": "delta",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_known_brand",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "112": {
+      "query_id": 112,
+      "raw_query": "pineapple",
+      "query_class": "Decorative Objects",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "113": {
+      "query_id": 113,
+      "raw_query": "led light strip",
+      "query_class": "Under Cabinet Lighting",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "114": {
+      "query_id": 114,
+      "raw_query": "geralyn upholstered storage platform bed",
+      "query_class": "Beds",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "115": {
+      "query_id": 115,
+      "raw_query": "peacock",
+      "query_class": "Wall Art",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "116": {
+      "query_id": 116,
+      "raw_query": "brockham solid blackout thermal grommet curtain panels",
+      "query_class": "Curtains & Drapes",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "117": {
+      "query_id": 117,
+      "raw_query": "tall storage cabinet",
+      "query_class": "Office Storage Cabinets",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "118": {
+      "query_id": 118,
+      "raw_query": "body pillow case",
+      "query_class": "Sheets And Sheet Sets",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "119": {
+      "query_id": 119,
+      "raw_query": "welcome sign",
+      "query_class": "Outdoor Wall Decor",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "120": {
+      "query_id": 120,
+      "raw_query": "zodiac pillow",
+      "query_class": "Accent Pillows",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "121": {
+      "query_id": 121,
+      "raw_query": "upholstered bed",
+      "query_class": "Beds",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "122": {
+      "query_id": 122,
+      "raw_query": "king size bed",
+      "query_class": "Beds",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "size_category",
+          "original_phrase": "king",
+          "normalized_value": "king",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_size_category",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "123": {
+      "query_id": 123,
+      "raw_query": "entrance table",
+      "query_class": "Sofa & Console Tables",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "124": {
+      "query_id": 124,
+      "raw_query": "unique coffee tables",
+      "query_class": "Coffee & Cocktail Tables",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "125": {
+      "query_id": 125,
+      "raw_query": "boho bed frame",
+      "query_class": "Bed Frames",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "126": {
+      "query_id": 126,
+      "raw_query": "leather dining chairs",
+      "query_class": "Dining Chairs",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "material",
+          "original_phrase": "leather",
+          "normalized_value": "leather",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_material",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "127": {
+      "query_id": 127,
+      "raw_query": "wine bar",
+      "query_class": "Bars & Bar Sets",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "128": {
+      "query_id": 128,
+      "raw_query": "block coffee table",
+      "query_class": "Coffee & Cocktail Tables",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "129": {
+      "query_id": 129,
+      "raw_query": "wainscoting ideas",
+      "query_class": "Molding & Millwork",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "130": {
+      "query_id": 130,
+      "raw_query": "entertainment console",
+      "query_class": "TV Stands & Entertainment Centers",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "131": {
+      "query_id": 131,
+      "raw_query": "kids chair",
+      "query_class": "Kids Chairs",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "132": {
+      "query_id": 132,
+      "raw_query": "farmhouse cabinet",
+      "query_class": "Accent Chests / Cabinets",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "133": {
+      "query_id": 133,
+      "raw_query": "outdoor light fixtures",
+      "query_class": "Outdoor Wall Lights",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "134": {
+      "query_id": 134,
+      "raw_query": "black hanging bookshelf",
+      "query_class": "Bookcases",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "color",
+          "original_phrase": "black",
+          "normalized_value": "black",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "135": {
+      "query_id": 135,
+      "raw_query": "low profile loveseat recliner",
+      "query_class": "Sofas",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "136": {
+      "query_id": 136,
+      "raw_query": "black fluffy stool",
+      "query_class": "Accent Stools",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "color",
+          "original_phrase": "black",
+          "normalized_value": "black",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "137": {
+      "query_id": 137,
+      "raw_query": "orren ellis l shaped desk",
+      "query_class": "Desks",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "138": {
+      "query_id": 138,
+      "raw_query": "glass doors for bath",
+      "query_class": "Shower & Tub Doors",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "material",
+          "original_phrase": "glass",
+          "normalized_value": "glass",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_material",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "139": {
+      "query_id": 139,
+      "raw_query": "auburn throw pillows",
+      "query_class": "Accent Pillows",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "140": {
+      "query_id": 140,
+      "raw_query": "wire basket with dividers",
+      "query_class": "Boxes, Bins, Baskets, & Buckets",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "141": {
+      "query_id": 141,
+      "raw_query": "podium with locking cabinet",
+      "query_class": "Lecterns & Podiums",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "142": {
+      "query_id": 142,
+      "raw_query": "kitchen wooden stand",
+      "query_class": "Specialty Serving",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "material",
+          "original_phrase": "wooden",
+          "normalized_value": "wood",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_material",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "143": {
+      "query_id": 143,
+      "raw_query": "queen wingback chair",
+      "query_class": "Accent Chairs",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "size_category",
+          "original_phrase": "queen",
+          "normalized_value": "queen",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_size_category",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "144": {
+      "query_id": 144,
+      "raw_query": "rug plum",
+      "query_class": "Area Rugs",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "145": {
+      "query_id": 145,
+      "raw_query": "liberty hardware francisco",
+      "query_class": "Cabinet and Drawer Pulls",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "146": {
+      "query_id": 146,
+      "raw_query": "laundry vanity cabinet",
+      "query_class": "Vanity Bases",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "147": {
+      "query_id": 147,
+      "raw_query": "drum picture",
+      "query_class": "Wall Art",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "148": {
+      "query_id": 148,
+      "raw_query": "industrial",
+      "query_class": "Wall & Accent Mirrors",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "149": {
+      "query_id": 149,
+      "raw_query": "mid century modern",
+      "query_class": "Dressers & Chests",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "150": {
+      "query_id": 150,
+      "raw_query": "dumbbells",
+      "query_class": "Free Weights",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "151": {
+      "query_id": 151,
+      "raw_query": "leather chair",
+      "query_class": "Accent Chairs",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "material",
+          "original_phrase": "leather",
+          "normalized_value": "leather",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_material",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "152": {
+      "query_id": 152,
+      "raw_query": "wishbone chair",
+      "query_class": "Dining Chairs",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "153": {
+      "query_id": 153,
+      "raw_query": "bohemian",
+      "query_class": "Area Rugs",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "155": {
+      "query_id": 155,
+      "raw_query": "floating bed",
+      "query_class": "Beds",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "156": {
+      "query_id": 156,
+      "raw_query": "papasan chair frame only",
+      "query_class": "Accent Chairs",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "157": {
+      "query_id": 157,
+      "raw_query": "velvet chaise",
+      "query_class": "Indoor Chaise Lounges",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "material",
+          "original_phrase": "velvet",
+          "normalized_value": "velvet",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_material",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "158": {
+      "query_id": 158,
+      "raw_query": "led nightstand",
+      "query_class": "Nightstands",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "159": {
+      "query_id": 159,
+      "raw_query": "meditation",
+      "query_class": "Decorative Objects",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "160": {
+      "query_id": 160,
+      "raw_query": "marble",
+      "query_class": "End Tables",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "material",
+          "original_phrase": "marble",
+          "normalized_value": "marble",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_material",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "161": {
+      "query_id": 161,
+      "raw_query": "accent chair recliner",
+      "query_class": "Recliners",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "162": {
+      "query_id": 162,
+      "raw_query": "turquoise chair",
+      "query_class": "Accent Chairs",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "color",
+          "original_phrase": "turquoise",
+          "normalized_value": "turquoise",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "163": {
+      "query_id": 163,
+      "raw_query": "dual monitor stand",
+      "query_class": "Computer Mounts",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "164": {
+      "query_id": 164,
+      "raw_query": "modern outdoor furniture",
+      "query_class": "Outdoor Conversation Sets",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "165": {
+      "query_id": 165,
+      "raw_query": "kitchen storage shelves",
+      "query_class": "Shelving & Racks",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "166": {
+      "query_id": 166,
+      "raw_query": "feather wall art",
+      "query_class": "Wall Art",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "167": {
+      "query_id": 167,
+      "raw_query": "camper",
+      "query_class": "Sheets And Sheet Sets",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "168": {
+      "query_id": 168,
+      "raw_query": "printers",
+      "query_class": "Carts & Stands",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "169": {
+      "query_id": 169,
+      "raw_query": "coffee bar buffet",
+      "query_class": "Sideboards & Buffets",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "170": {
+      "query_id": 170,
+      "raw_query": "zen",
+      "query_class": "Wall Art",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "171": {
+      "query_id": 171,
+      "raw_query": "nectar queen mattress",
+      "query_class": "Foam and Latex Mattresses",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "size_category",
+          "original_phrase": "queen",
+          "normalized_value": "queen",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_size_category",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "172": {
+      "query_id": 172,
+      "raw_query": "picasso",
+      "query_class": "Wall Art",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "173": {
+      "query_id": 173,
+      "raw_query": "bedroom accessories",
+      "query_class": "Bath Accessories",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "174": {
+      "query_id": 174,
+      "raw_query": "star wars rug",
+      "query_class": "Licensed Products",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "175": {
+      "query_id": 175,
+      "raw_query": "basket planter",
+      "query_class": "Planters",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "176": {
+      "query_id": 176,
+      "raw_query": "mexican art",
+      "query_class": "Wall Art",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "177": {
+      "query_id": 177,
+      "raw_query": "rustic storage cabinet",
+      "query_class": "Office Storage Cabinets",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "178": {
+      "query_id": 178,
+      "raw_query": "almost heaven sauna",
+      "query_class": "Saunas",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "179": {
+      "query_id": 179,
+      "raw_query": "promo codes or discounts",
+      "query_class": "Wall Art",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "180": {
+      "query_id": 180,
+      "raw_query": "outdoor lounge cushions",
+      "query_class": "Furniture Cushions",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "181": {
+      "query_id": 181,
+      "raw_query": "e12/candelabra",
+      "query_class": "Light Bulbs",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "182": {
+      "query_id": 182,
+      "raw_query": "penny round tile",
+      "query_class": "Floor & Wall Tile",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "183": {
+      "query_id": 183,
+      "raw_query": "farmhouse bread box",
+      "query_class": "Food Storage & Dispensers",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "184": {
+      "query_id": 184,
+      "raw_query": "sugar canister",
+      "query_class": "Canisters & Jars",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "185": {
+      "query_id": 185,
+      "raw_query": "lunch bag",
+      "query_class": "Picnic Baskets & Coolers",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "186": {
+      "query_id": 186,
+      "raw_query": "board game storage cabinet",
+      "query_class": "Office Storage Cabinets",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "188": {
+      "query_id": 188,
+      "raw_query": "bedroom wall decor floral, multicolored with some teal (prints)",
+      "query_class": "Wall D\u00e9cor",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "color",
+          "original_phrase": "teal",
+          "normalized_value": "teal",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "189": {
+      "query_id": 189,
+      "raw_query": "big basket for dirty cloths",
+      "query_class": "Hampers & Baskets",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "190": {
+      "query_id": 190,
+      "raw_query": "benjiamino faux leather power lift chair",
+      "query_class": "Recliners",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "material",
+          "original_phrase": "faux leather",
+          "normalized_value": "faux leather",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_material",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "191": {
+      "query_id": 191,
+      "raw_query": "biycicle plant stands",
+      "query_class": "Plant & Telephone Tables",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "193": {
+      "query_id": 193,
+      "raw_query": "belchertown table lamp",
+      "query_class": "Table Lamps",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "194": {
+      "query_id": 194,
+      "raw_query": "black frame 22 x 36",
+      "query_class": "Picture Frames",
+      "has_constraints": true,
+      "constraint_count": 2,
+      "constraints": [
+        {
+          "attribute": "dimension",
+          "original_phrase": "22 x 36",
+          "normalized_value": {
+            "width": 22.0,
+            "depth": 36.0
+          },
+          "operator": "APPROX_EQUALS",
+          "extraction_method": "regex_2d_dimensions",
+          "confidence": 0.95
+        },
+        {
+          "attribute": "color",
+          "original_phrase": "black",
+          "normalized_value": "black",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "195": {
+      "query_id": 195,
+      "raw_query": "black freestanding tub  with faucet",
+      "query_class": "Tubs And Whirlpools",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "color",
+          "original_phrase": "black",
+          "normalized_value": "black",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "196": {
+      "query_id": 196,
+      "raw_query": "chabely 5 draw chest",
+      "query_class": "Dressers & Chests",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "197": {
+      "query_id": 197,
+      "raw_query": "desk for kids tjat ate 10 year old",
+      "query_class": "nan",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "198": {
+      "query_id": 198,
+      "raw_query": "cake plates with tops",
+      "query_class": "Specialty Serving",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "199": {
+      "query_id": 199,
+      "raw_query": "blue faux throw with pillows",
+      "query_class": "Accent Pillows",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "color",
+          "original_phrase": "blue",
+          "normalized_value": "blue",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "200": {
+      "query_id": 200,
+      "raw_query": "ceramic tile sea shell",
+      "query_class": "Floor & Wall Tile",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "material",
+          "original_phrase": "ceramic",
+          "normalized_value": "ceramic",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_material",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "201": {
+      "query_id": 201,
+      "raw_query": "delta trinsic double towel hook in champagne bronze",
+      "query_class": "Towel & Robe Hooks",
+      "has_constraints": true,
+      "constraint_count": 3,
+      "constraints": [
+        {
+          "attribute": "brand",
+          "original_phrase": "delta",
+          "normalized_value": "delta",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_known_brand",
+          "confidence": 0.95
+        },
+        {
+          "attribute": "color",
+          "original_phrase": "champagne bronze",
+          "normalized_value": "bronze",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        },
+        {
+          "attribute": "material",
+          "original_phrase": "bronze",
+          "normalized_value": "bronze",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_material",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "202": {
+      "query_id": 202,
+      "raw_query": "full mattress padded liner",
+      "query_class": "Mattress Toppers and Pads",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "size_category",
+          "original_phrase": "full",
+          "normalized_value": "full",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_size_category",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "203": {
+      "query_id": 203,
+      "raw_query": "ge top loading washer 4.5",
+      "query_class": "Washing Machines",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "brand",
+          "original_phrase": "ge",
+          "normalized_value": "ge",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_known_brand",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "204": {
+      "query_id": 204,
+      "raw_query": "fleur de lis living candle wall sconce bronze",
+      "query_class": "Candle Holders",
+      "has_constraints": true,
+      "constraint_count": 2,
+      "constraints": [
+        {
+          "attribute": "color",
+          "original_phrase": "bronze",
+          "normalized_value": "bronze",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        },
+        {
+          "attribute": "material",
+          "original_phrase": "bronze",
+          "normalized_value": "bronze",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_material",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "205": {
+      "query_id": 205,
+      "raw_query": "ines shag rug w003096809",
+      "query_class": "Area Rugs",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "206": {
+      "query_id": 206,
+      "raw_query": "grill cover 73",
+      "query_class": "Covers & Carry Bags",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "207": {
+      "query_id": 207,
+      "raw_query": "dull bed with shirt head board",
+      "query_class": "nan",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "208": {
+      "query_id": 208,
+      "raw_query": "fawkes 36\" blue vanity",
+      "query_class": "Vanities",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "color",
+          "original_phrase": "blue",
+          "normalized_value": "blue",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "209": {
+      "query_id": 209,
+      "raw_query": "door pulls bronze matte 4 inch",
+      "query_class": "Cabinet and Drawer Pulls",
+      "has_constraints": true,
+      "constraint_count": 3,
+      "constraints": [
+        {
+          "attribute": "dimension",
+          "original_phrase": "4 inch",
+          "normalized_value": 4.0,
+          "operator": "APPROX_EQUALS",
+          "extraction_method": "regex_linear_dimension",
+          "confidence": 0.9
+        },
+        {
+          "attribute": "color",
+          "original_phrase": "bronze",
+          "normalized_value": "bronze",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        },
+        {
+          "attribute": "material",
+          "original_phrase": "bronze",
+          "normalized_value": "bronze",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_material",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "210": {
+      "query_id": 210,
+      "raw_query": "love seat wide faux leather tuxedo arm sofa",
+      "query_class": "Sofas",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "material",
+          "original_phrase": "faux leather",
+          "normalized_value": "faux leather",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_material",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "211": {
+      "query_id": 211,
+      "raw_query": "memory foam rug galveston",
+      "query_class": "Bath Rugs & Mats",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "212": {
+      "query_id": 212,
+      "raw_query": "nettie 5 pc bar set",
+      "query_class": "Patio Bar Sets",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "213": {
+      "query_id": 213,
+      "raw_query": "kraus kitchen sink faucet oletto kpf 2820 sfs",
+      "query_class": "Kitchen Faucets",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "214": {
+      "query_id": 214,
+      "raw_query": "light wood nightstand with silver accents",
+      "query_class": "Nightstands",
+      "has_constraints": true,
+      "constraint_count": 2,
+      "constraints": [
+        {
+          "attribute": "color",
+          "original_phrase": "silver",
+          "normalized_value": "silver",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        },
+        {
+          "attribute": "material",
+          "original_phrase": "wood",
+          "normalized_value": "wood",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_material",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "215": {
+      "query_id": 215,
+      "raw_query": "king adjustable bed including mattress",
+      "query_class": "Adjustable Beds",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "size_category",
+          "original_phrase": "king",
+          "normalized_value": "king",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_size_category",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "216": {
+      "query_id": 216,
+      "raw_query": "music plug wall plate",
+      "query_class": "Wall Plates",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "218": {
+      "query_id": 218,
+      "raw_query": "wand bunk beds",
+      "query_class": "nan",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "219": {
+      "query_id": 219,
+      "raw_query": "trinaic towel rod",
+      "query_class": "nan",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "220": {
+      "query_id": 220,
+      "raw_query": "sheets for twinxl",
+      "query_class": "Sheets And Sheet Sets",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "221": {
+      "query_id": 221,
+      "raw_query": "small space dining table and chairs sets",
+      "query_class": "Dining Table Sets",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "222": {
+      "query_id": 222,
+      "raw_query": "small loving roomtables",
+      "query_class": "nan",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "223": {
+      "query_id": 223,
+      "raw_query": "wisdom stone river 3-3/4",
+      "query_class": "Cabinet and Drawer Pulls",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "material",
+          "original_phrase": "stone",
+          "normalized_value": "stone",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_material",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "224": {
+      "query_id": 224,
+      "raw_query": "twin over full bunk beds cool desins",
+      "query_class": "nan",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "size_category",
+          "original_phrase": "full",
+          "normalized_value": "full",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_size_category",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "225": {
+      "query_id": 225,
+      "raw_query": "white splashproof shiplap wallpaper",
+      "query_class": "Wallpaper",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "color",
+          "original_phrase": "white",
+          "normalized_value": "white",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "226": {
+      "query_id": 226,
+      "raw_query": "power lift chair",
+      "query_class": "Recliners",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "227": {
+      "query_id": 227,
+      "raw_query": "owl",
+      "query_class": "Garden Statues",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "228": {
+      "query_id": 228,
+      "raw_query": "bee",
+      "query_class": "Glassware & Barware",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "229": {
+      "query_id": 229,
+      "raw_query": "waterfall faucet",
+      "query_class": "Bathroom Sink Faucets",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "230": {
+      "query_id": 230,
+      "raw_query": "gold",
+      "query_class": "Decorative Objects",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "color",
+          "original_phrase": "gold",
+          "normalized_value": "gold",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "231": {
+      "query_id": 231,
+      "raw_query": "anti fatigue mat",
+      "query_class": "Kitchen Mats",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "232": {
+      "query_id": 232,
+      "raw_query": "storage dresser",
+      "query_class": "Dressers & Chests",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "233": {
+      "query_id": 233,
+      "raw_query": "kelly clarkson light fixtures",
+      "query_class": "Flush Mount Lighting",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "234": {
+      "query_id": 234,
+      "raw_query": "artificial orchid arrangement",
+      "query_class": "Faux Florals",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "235": {
+      "query_id": 235,
+      "raw_query": "bathroom wastebasket",
+      "query_class": "Trash Cans & Recycling",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "236": {
+      "query_id": 236,
+      "raw_query": "3 piece rug set with runners",
+      "query_class": "Area Rugs",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "piece_count",
+          "original_phrase": "3 piece",
+          "normalized_value": 3,
+          "operator": "EQUALS",
+          "extraction_method": "regex_numeric_count",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "237": {
+      "query_id": 237,
+      "raw_query": "cloud modular sectional",
+      "query_class": "Sectionals",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "238": {
+      "query_id": 238,
+      "raw_query": "outdoor seat/back cushion",
+      "query_class": "Furniture Cushions",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "239": {
+      "query_id": 239,
+      "raw_query": "bathroom single faucet",
+      "query_class": "Bathroom Sink Faucets",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "240": {
+      "query_id": 240,
+      "raw_query": "eiffel tower wall art",
+      "query_class": "Wall Art",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "241": {
+      "query_id": 241,
+      "raw_query": "decorative wall clocks",
+      "query_class": "Wall Clocks",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "242": {
+      "query_id": 242,
+      "raw_query": "accent leather chair",
+      "query_class": "Accent Chairs",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "material",
+          "original_phrase": "leather",
+          "normalized_value": "leather",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_material",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "243": {
+      "query_id": 243,
+      "raw_query": "indoor multi tiered plant stand",
+      "query_class": "Plant & Telephone Tables",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "244": {
+      "query_id": 244,
+      "raw_query": "pull out sleeper loveseat",
+      "query_class": "Sofas",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "245": {
+      "query_id": 245,
+      "raw_query": "anchor decor",
+      "query_class": "Wall D\u00e9cor",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "246": {
+      "query_id": 246,
+      "raw_query": "clear shower curtain",
+      "query_class": "Shower Curtains",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "color",
+          "original_phrase": "clear",
+          "normalized_value": "clear",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "247": {
+      "query_id": 247,
+      "raw_query": "beaded curtains",
+      "query_class": "Curtains & Drapes",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "248": {
+      "query_id": 248,
+      "raw_query": "surge protector",
+      "query_class": "Lighting Accessories",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "249": {
+      "query_id": 249,
+      "raw_query": "bistro table and chairs",
+      "query_class": "Patio Dining Sets",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "250": {
+      "query_id": 250,
+      "raw_query": "multi color rug",
+      "query_class": "Area Rugs",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "251": {
+      "query_id": 251,
+      "raw_query": "coffee container",
+      "query_class": "Canisters & Jars",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "252": {
+      "query_id": 252,
+      "raw_query": "accent chairs living room",
+      "query_class": "Accent Chairs",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "253": {
+      "query_id": 253,
+      "raw_query": "antique brass faucet",
+      "query_class": "Bathroom Sink Faucets",
+      "has_constraints": true,
+      "constraint_count": 2,
+      "constraints": [
+        {
+          "attribute": "color",
+          "original_phrase": "brass",
+          "normalized_value": "brass",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        },
+        {
+          "attribute": "material",
+          "original_phrase": "brass",
+          "normalized_value": "brass",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_material",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "254": {
+      "query_id": 254,
+      "raw_query": "comfortable accent chair",
+      "query_class": "Accent Chairs",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "255": {
+      "query_id": 255,
+      "raw_query": "desk and chair set",
+      "query_class": "Office Chairs",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "256": {
+      "query_id": 256,
+      "raw_query": "high weight capacity bunk beds",
+      "query_class": "Kids Beds",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "257": {
+      "query_id": 257,
+      "raw_query": "living room coffee table sets",
+      "query_class": "Living Room Table Sets",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "258": {
+      "query_id": 258,
+      "raw_query": "breakfast bar table",
+      "query_class": "Dining Table Sets",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "259": {
+      "query_id": 259,
+      "raw_query": "nursery end table",
+      "query_class": "End Tables",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "260": {
+      "query_id": 260,
+      "raw_query": "retractable side awning",
+      "query_class": "Awnings",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "261": {
+      "query_id": 261,
+      "raw_query": "semi flush foyer light",
+      "query_class": "Flush Mount Lighting",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "262": {
+      "query_id": 262,
+      "raw_query": "bathroom freestanding cabinet",
+      "query_class": "Bathroom Storage",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "263": {
+      "query_id": 263,
+      "raw_query": "small curtain rods",
+      "query_class": "Curtain Hardware & Accessories",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "264": {
+      "query_id": 264,
+      "raw_query": "cortez pillow",
+      "query_class": "Accent Pillows",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "265": {
+      "query_id": 265,
+      "raw_query": "candace wingback upholstered bed",
+      "query_class": "Beds",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "266": {
+      "query_id": 266,
+      "raw_query": "champagne velvet desk chair",
+      "query_class": "Office Chairs",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "material",
+          "original_phrase": "velvet",
+          "normalized_value": "velvet",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_material",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "267": {
+      "query_id": 267,
+      "raw_query": "dolomite subway tile",
+      "query_class": "Floor & Wall Tile",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "268": {
+      "query_id": 268,
+      "raw_query": "betty resin free standing umbrella",
+      "query_class": "Patio Umbrella Stands & Bases",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "269": {
+      "query_id": 269,
+      "raw_query": "donaldson teak couch",
+      "query_class": "Patio Sofas",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "270": {
+      "query_id": 270,
+      "raw_query": "edge chair mat",
+      "query_class": "Chairmats",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "271": {
+      "query_id": 271,
+      "raw_query": "chinese flower stand",
+      "query_class": "Plant & Telephone Tables",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "272": {
+      "query_id": 272,
+      "raw_query": "oliver parsons",
+      "query_class": "Dining Chairs",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "273": {
+      "query_id": 273,
+      "raw_query": "stainless steel free standing shower caddy",
+      "query_class": "Shower & Tub Accessories",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "material",
+          "original_phrase": "stainless steel",
+          "normalized_value": "stainless steel",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_material",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "274": {
+      "query_id": 274,
+      "raw_query": "gowdy height adjustable standing desk",
+      "query_class": "Desks",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "275": {
+      "query_id": 275,
+      "raw_query": "hinged square ottoman",
+      "query_class": "Ottomans",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "276": {
+      "query_id": 276,
+      "raw_query": "chaves l-shape floating desk with hutch",
+      "query_class": "Desks",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "277": {
+      "query_id": 277,
+      "raw_query": "barstool patio sets",
+      "query_class": "Patio Bar Stools",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "278": {
+      "query_id": 278,
+      "raw_query": "parakeet toy",
+      "query_class": "Bird Play Stand & Playcenters",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "279": {
+      "query_id": 279,
+      "raw_query": "marlon tufted queen bed",
+      "query_class": "Beds",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "size_category",
+          "original_phrase": "queen",
+          "normalized_value": "queen",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_size_category",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "280": {
+      "query_id": 280,
+      "raw_query": "johan desk by laurel foundry",
+      "query_class": "Desks",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "brand",
+          "original_phrase": "laurel foundry",
+          "normalized_value": "laurel foundry",
+          "operator": "EQUALS",
+          "extraction_method": "rule_by_prefix",
+          "confidence": 0.9
+        }
+      ]
+    },
+    "281": {
+      "query_id": 281,
+      "raw_query": "brunk ship wheel",
+      "query_class": "Decorative Objects",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "282": {
+      "query_id": 282,
+      "raw_query": "grantola wall mirror",
+      "query_class": "Wall & Accent Mirrors",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "283": {
+      "query_id": 283,
+      "raw_query": "gaia driftwood table",
+      "query_class": "Dining Tables",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "color",
+          "original_phrase": "driftwood",
+          "normalized_value": "driftwood",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "284": {
+      "query_id": 284,
+      "raw_query": "family lamp",
+      "query_class": "Table Lamps",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "285": {
+      "query_id": 285,
+      "raw_query": "48\" sliding single track , barn door for laundry",
+      "query_class": "Barn Door Hardware",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "286": {
+      "query_id": 286,
+      "raw_query": "hitchcock mid-century wall shelf",
+      "query_class": "Wall Mounted Shelves",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "287": {
+      "query_id": 287,
+      "raw_query": "cover set for outdoor furniture",
+      "query_class": "Furniture Covers",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "288": {
+      "query_id": 288,
+      "raw_query": "round outdoor patio cover",
+      "query_class": "Furniture Covers",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "289": {
+      "query_id": 289,
+      "raw_query": "coma inducer comforter king set",
+      "query_class": "Bedding Sets",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "size_category",
+          "original_phrase": "king",
+          "normalized_value": "king",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_size_category",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "290": {
+      "query_id": 290,
+      "raw_query": "mission double vanity",
+      "query_class": "Vanities",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "291": {
+      "query_id": 291,
+      "raw_query": "front door cabinet with doors",
+      "query_class": "Accent Chests / Cabinets",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "292": {
+      "query_id": 292,
+      "raw_query": "decorative white pillow",
+      "query_class": "Accent Pillows",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "color",
+          "original_phrase": "white",
+          "normalized_value": "white",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "293": {
+      "query_id": 293,
+      "raw_query": "wood floor protector mat",
+      "query_class": "Chairmats",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "material",
+          "original_phrase": "wood",
+          "normalized_value": "wood",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_material",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "294": {
+      "query_id": 294,
+      "raw_query": "moen multi function dual shower head",
+      "query_class": "Shower Heads",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "brand",
+          "original_phrase": "moen",
+          "normalized_value": "moen",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_known_brand",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "295": {
+      "query_id": 295,
+      "raw_query": "end table between recliners",
+      "query_class": "End Tables",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "296": {
+      "query_id": 296,
+      "raw_query": "zakariyah twin platform",
+      "query_class": "Kids Beds",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "size_category",
+          "original_phrase": "twin",
+          "normalized_value": "twin",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_size_category",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "297": {
+      "query_id": 297,
+      "raw_query": "seat cushions desk",
+      "query_class": "Chair Accessories",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "298": {
+      "query_id": 298,
+      "raw_query": "small woven pouf",
+      "query_class": "Ottomans",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "300": {
+      "query_id": 300,
+      "raw_query": "animal print handmade tufted wool beige/black area rug by allmodern",
+      "query_class": "Area Rugs",
+      "has_constraints": true,
+      "constraint_count": 4,
+      "constraints": [
+        {
+          "attribute": "brand",
+          "original_phrase": "allmodern",
+          "normalized_value": "allmodern",
+          "operator": "EQUALS",
+          "extraction_method": "rule_by_prefix",
+          "confidence": 0.9
+        },
+        {
+          "attribute": "color",
+          "original_phrase": "black",
+          "normalized_value": "black",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        },
+        {
+          "attribute": "color",
+          "original_phrase": "beige",
+          "normalized_value": "beige",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        },
+        {
+          "attribute": "material",
+          "original_phrase": "wool",
+          "normalized_value": "wool",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_material",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "301": {
+      "query_id": 301,
+      "raw_query": "circle cabinet pulls",
+      "query_class": "Cabinet and Drawer Pulls",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "302": {
+      "query_id": 302,
+      "raw_query": "mattress foam topper queen",
+      "query_class": "Mattress Toppers and Pads",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "size_category",
+          "original_phrase": "queen",
+          "normalized_value": "queen",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_size_category",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "303": {
+      "query_id": 303,
+      "raw_query": "hawaii vintage art",
+      "query_class": "Wall Art",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "304": {
+      "query_id": 304,
+      "raw_query": "merlyn 6",
+      "query_class": "Outdoor Conversation Sets",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "305": {
+      "query_id": 305,
+      "raw_query": "ligth bulb",
+      "query_class": "Light Bulbs",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "306": {
+      "query_id": 306,
+      "raw_query": "mobley zero gravity adjustable bed with wireless remote",
+      "query_class": "Adjustable Beds",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "307": {
+      "query_id": 307,
+      "raw_query": "real touch roses floral arrangements in glass vase",
+      "query_class": "Faux Florals",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "material",
+          "original_phrase": "glass",
+          "normalized_value": "glass",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_material",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "308": {
+      "query_id": 308,
+      "raw_query": "led 60",
+      "query_class": "Light Bulbs",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "309": {
+      "query_id": 309,
+      "raw_query": "moen 5995 arbor one",
+      "query_class": "Kitchen Faucets",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "brand",
+          "original_phrase": "moen",
+          "normalized_value": "moen",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_known_brand",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "310": {
+      "query_id": 310,
+      "raw_query": "meade mirror",
+      "query_class": "Wall & Accent Mirrors",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "311": {
+      "query_id": 311,
+      "raw_query": "odum velvet",
+      "query_class": "Sofas",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "material",
+          "original_phrase": "velvet",
+          "normalized_value": "velvet",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_material",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "312": {
+      "query_id": 312,
+      "raw_query": "coat rack for bedroom",
+      "query_class": "Coat Racks and Hooks",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "313": {
+      "query_id": 313,
+      "raw_query": "malachi sled",
+      "query_class": "Coffee & Cocktail Tables",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "314": {
+      "query_id": 314,
+      "raw_query": "body pillow and case",
+      "query_class": "Sheets And Sheet Sets",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "315": {
+      "query_id": 315,
+      "raw_query": "medium clips",
+      "query_class": "Uniters Outdoor Furniture",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "316": {
+      "query_id": 316,
+      "raw_query": "rolande heavy duty power lift assist recliner",
+      "query_class": "Recliners",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "317": {
+      "query_id": 317,
+      "raw_query": "hulmeville writing desk with hutch",
+      "query_class": "Desks",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "318": {
+      "query_id": 318,
+      "raw_query": "sunjoy lantern",
+      "query_class": "Outdoor Lanterns & Lamps",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "319": {
+      "query_id": 319,
+      "raw_query": "landis wall mounted bathroom shelves",
+      "query_class": "Bathroom Storage",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "320": {
+      "query_id": 320,
+      "raw_query": "blaylock bookcase headboard",
+      "query_class": "Headboards",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "321": {
+      "query_id": 321,
+      "raw_query": "hussain handmade tufted magenta rug",
+      "query_class": "Area Rugs",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "322": {
+      "query_id": 322,
+      "raw_query": "cream queen duvet cover",
+      "query_class": "Bedding Sets",
+      "has_constraints": true,
+      "constraint_count": 2,
+      "constraints": [
+        {
+          "attribute": "size_category",
+          "original_phrase": "queen",
+          "normalized_value": "queen",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_size_category",
+          "confidence": 0.95
+        },
+        {
+          "attribute": "color",
+          "original_phrase": "cream",
+          "normalized_value": "cream",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "323": {
+      "query_id": 323,
+      "raw_query": "hub leaning full length mirror",
+      "query_class": "Wall & Accent Mirrors",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "size_category",
+          "original_phrase": "full",
+          "normalized_value": "full",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_size_category",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "324": {
+      "query_id": 324,
+      "raw_query": "chase utility laundry cart",
+      "query_class": "Laundry Accessories & Storage",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "325": {
+      "query_id": 325,
+      "raw_query": "outdoor waterproof chest",
+      "query_class": "Deck Boxes",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "326": {
+      "query_id": 326,
+      "raw_query": "bowersville ladder writing desk",
+      "query_class": "Desks",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "327": {
+      "query_id": 327,
+      "raw_query": "kohler purist brushed bronze",
+      "query_class": "Bathroom Sink Faucets",
+      "has_constraints": true,
+      "constraint_count": 3,
+      "constraints": [
+        {
+          "attribute": "brand",
+          "original_phrase": "kohler",
+          "normalized_value": "kohler",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_known_brand",
+          "confidence": 0.95
+        },
+        {
+          "attribute": "color",
+          "original_phrase": "bronze",
+          "normalized_value": "bronze",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        },
+        {
+          "attribute": "material",
+          "original_phrase": "bronze",
+          "normalized_value": "bronze",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_material",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "328": {
+      "query_id": 328,
+      "raw_query": "golub dining table",
+      "query_class": "Dining Tables",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "329": {
+      "query_id": 329,
+      "raw_query": "wayfair tension rod",
+      "query_class": "Curtain Hardware & Accessories",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "330": {
+      "query_id": 330,
+      "raw_query": "kari 2 piece",
+      "query_class": "Outdoor Conversation Sets",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "piece_count",
+          "original_phrase": "2 piece",
+          "normalized_value": 2,
+          "operator": "EQUALS",
+          "extraction_method": "regex_numeric_count",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "331": {
+      "query_id": 331,
+      "raw_query": "upholstered girls bed",
+      "query_class": "Beds",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "332": {
+      "query_id": 332,
+      "raw_query": "attleboro drum coffee table",
+      "query_class": "Coffee & Cocktail Tables",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "333": {
+      "query_id": 333,
+      "raw_query": "stainless steel colander set",
+      "query_class": "Strainers, Colanders, & Salad Spinners",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "material",
+          "original_phrase": "stainless steel",
+          "normalized_value": "stainless steel",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_material",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "334": {
+      "query_id": 334,
+      "raw_query": "itchington butterfly",
+      "query_class": "Dining Tables",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "335": {
+      "query_id": 335,
+      "raw_query": "canadian",
+      "query_class": "Wreaths",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "336": {
+      "query_id": 336,
+      "raw_query": "mystic swivel",
+      "query_class": "Accent Chairs",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "337": {
+      "query_id": 337,
+      "raw_query": "iittala bowl",
+      "query_class": "Dining Bowls",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "338": {
+      "query_id": 338,
+      "raw_query": "mahone porch rocking chair",
+      "query_class": "Patio Rockers & Gliders",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "339": {
+      "query_id": 339,
+      "raw_query": "ruckus chair",
+      "query_class": "Accent Chairs",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "340": {
+      "query_id": 340,
+      "raw_query": "berenice 4 storage cabinet",
+      "query_class": "Office Storage Cabinets",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "341": {
+      "query_id": 341,
+      "raw_query": "canvas map art",
+      "query_class": "Wall Art",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "342": {
+      "query_id": 342,
+      "raw_query": "brendon counter stool",
+      "query_class": "Bar Stools",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "343": {
+      "query_id": 343,
+      "raw_query": "navy and peach bedding",
+      "query_class": "Bedding Sets",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "color",
+          "original_phrase": "navy",
+          "normalized_value": "navy",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "344": {
+      "query_id": 344,
+      "raw_query": "ottoman bed queen",
+      "query_class": "Ottomans",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "size_category",
+          "original_phrase": "queen",
+          "normalized_value": "queen",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_size_category",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "345": {
+      "query_id": 345,
+      "raw_query": "oriental vanity",
+      "query_class": "Makeup Vanities",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "346": {
+      "query_id": 346,
+      "raw_query": "nesting tray set",
+      "query_class": "Decorative Trays",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "347": {
+      "query_id": 347,
+      "raw_query": "olive green console table",
+      "query_class": "Sofa & Console Tables",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "color",
+          "original_phrase": "green",
+          "normalized_value": "green",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "348": {
+      "query_id": 348,
+      "raw_query": "one alium way",
+      "query_class": "Sofas",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "349": {
+      "query_id": 349,
+      "raw_query": "mud room sign",
+      "query_class": "Wall D\u00e9cor",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "351": {
+      "query_id": 351,
+      "raw_query": "white bathroom vanity black hardware",
+      "query_class": "Vanities",
+      "has_constraints": true,
+      "constraint_count": 2,
+      "constraints": [
+        {
+          "attribute": "color",
+          "original_phrase": "white",
+          "normalized_value": "white",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        },
+        {
+          "attribute": "color",
+          "original_phrase": "black",
+          "normalized_value": "black",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "352": {
+      "query_id": 352,
+      "raw_query": "amarillo",
+      "query_class": "Wall Art",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "353": {
+      "query_id": 353,
+      "raw_query": "pennfield playhouse",
+      "query_class": "Playhouses & Play Tents",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "354": {
+      "query_id": 354,
+      "raw_query": "tressler rug",
+      "query_class": "Area Rugs",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "355": {
+      "query_id": 355,
+      "raw_query": "argenteuil",
+      "query_class": "Wall Art",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "356": {
+      "query_id": 356,
+      "raw_query": "platform bed side table",
+      "query_class": "End Tables",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "357": {
+      "query_id": 357,
+      "raw_query": "tall free standing pet gate",
+      "query_class": "Pet Gates",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "358": {
+      "query_id": 358,
+      "raw_query": "sliding closet mirror",
+      "query_class": "Wall & Accent Mirrors",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "359": {
+      "query_id": 359,
+      "raw_query": "french molding",
+      "query_class": "Molding & Millwork",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "360": {
+      "query_id": 360,
+      "raw_query": "huntsville sectional sofa",
+      "query_class": "Sectionals",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "361": {
+      "query_id": 361,
+      "raw_query": "kisner",
+      "query_class": "Wall Art",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "362": {
+      "query_id": 362,
+      "raw_query": "brushed gold wall decor",
+      "query_class": "Wall D\u00e9cor",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "color",
+          "original_phrase": "gold",
+          "normalized_value": "gold",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "363": {
+      "query_id": 363,
+      "raw_query": "fortunat coffee table",
+      "query_class": "Coffee & Cocktail Tables",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "364": {
+      "query_id": 364,
+      "raw_query": "croscill ashton",
+      "query_class": "Accent Pillows",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "365": {
+      "query_id": 365,
+      "raw_query": "gas detector",
+      "query_class": "Smoke & CO Detectors",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "366": {
+      "query_id": 366,
+      "raw_query": "drudge report",
+      "query_class": "Wall Art",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "367": {
+      "query_id": 367,
+      "raw_query": "wooden chair outdoor",
+      "query_class": "Patio Lounge Chairs",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "material",
+          "original_phrase": "wooden",
+          "normalized_value": "wood",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_material",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "368": {
+      "query_id": 368,
+      "raw_query": "pasta tools",
+      "query_class": "Cooking Utensils",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "369": {
+      "query_id": 369,
+      "raw_query": "wrought tv stand",
+      "query_class": "TV Stands & Entertainment Centers",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "370": {
+      "query_id": 370,
+      "raw_query": "rug for teen room",
+      "query_class": "Area Rugs",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "371": {
+      "query_id": 371,
+      "raw_query": "milk cow chair",
+      "query_class": "Accent Chairs",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "372": {
+      "query_id": 372,
+      "raw_query": "verden callan",
+      "query_class": "Door Knobs",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "373": {
+      "query_id": 373,
+      "raw_query": "togo chair",
+      "query_class": "Accent Chairs",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "374": {
+      "query_id": 374,
+      "raw_query": "sinks bed frame",
+      "query_class": "Kitchen Sinks",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "375": {
+      "query_id": 375,
+      "raw_query": "pastel pink desk chair",
+      "query_class": "Office Chairs",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "color",
+          "original_phrase": "pink",
+          "normalized_value": "pink",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "376": {
+      "query_id": 376,
+      "raw_query": "island estate coffee table",
+      "query_class": "Coffee & Cocktail Tables",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "377": {
+      "query_id": 377,
+      "raw_query": "glinda upholstered bench",
+      "query_class": "Benches",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "378": {
+      "query_id": 378,
+      "raw_query": "cliffside 5 light candle style drum chandelier",
+      "query_class": "Chandeliers",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "light_count",
+          "original_phrase": "5 light",
+          "normalized_value": 5,
+          "operator": "EQUALS",
+          "extraction_method": "regex_numeric_count",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "379": {
+      "query_id": 379,
+      "raw_query": "urban outfitters duvet",
+      "query_class": "Bedding Sets",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "380": {
+      "query_id": 380,
+      "raw_query": "gravity feeder",
+      "query_class": "Dog and Cat Bowls, Feeders & Accessories",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "381": {
+      "query_id": 381,
+      "raw_query": "farmhouse hood vent",
+      "query_class": "Range Hoods",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "382": {
+      "query_id": 382,
+      "raw_query": "counter top one cup hot water dispenser",
+      "query_class": "Kitchen Faucets",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "383": {
+      "query_id": 383,
+      "raw_query": "minnestrista",
+      "query_class": "Wall Art",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "384": {
+      "query_id": 384,
+      "raw_query": "dining table vinyl cloth",
+      "query_class": "Dining Linens",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "385": {
+      "query_id": 385,
+      "raw_query": "mom urn",
+      "query_class": "Vases, Urns, Jars, & Bottles",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "386": {
+      "query_id": 386,
+      "raw_query": "alter furniture",
+      "query_class": "Outdoor Conversation Sets",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "387": {
+      "query_id": 387,
+      "raw_query": "self enclosed planters",
+      "query_class": "Planters",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "388": {
+      "query_id": 388,
+      "raw_query": "outdoor sectional doning",
+      "query_class": "Outdoor Conversation Sets",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "389": {
+      "query_id": 389,
+      "raw_query": "brush nickel faucet bathroom",
+      "query_class": "Bathroom Sink Faucets",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "390": {
+      "query_id": 390,
+      "raw_query": "cushion replacement insert",
+      "query_class": "Furniture Cushions",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "391": {
+      "query_id": 391,
+      "raw_query": "writing desk 48\"",
+      "query_class": "Desks",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "392": {
+      "query_id": 392,
+      "raw_query": "china clock",
+      "query_class": "Wall Clocks",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "393": {
+      "query_id": 393,
+      "raw_query": "propane gas dryer",
+      "query_class": "Dryers",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "394": {
+      "query_id": 394,
+      "raw_query": "gray leather cocktail table",
+      "query_class": "Coffee & Cocktail Tables",
+      "has_constraints": true,
+      "constraint_count": 2,
+      "constraints": [
+        {
+          "attribute": "color",
+          "original_phrase": "gray",
+          "normalized_value": "gray",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        },
+        {
+          "attribute": "material",
+          "original_phrase": "leather",
+          "normalized_value": "leather",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_material",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "395": {
+      "query_id": 395,
+      "raw_query": "pantry grey",
+      "query_class": "Pantry Cabinets",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "color",
+          "original_phrase": "grey",
+          "normalized_value": "gray",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "396": {
+      "query_id": 396,
+      "raw_query": "alyse 8 light",
+      "query_class": "Chandeliers",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "light_count",
+          "original_phrase": "8 light",
+          "normalized_value": 8,
+          "operator": "EQUALS",
+          "extraction_method": "regex_numeric_count",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "397": {
+      "query_id": 397,
+      "raw_query": "maryford queen tufted bed",
+      "query_class": "Beds",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "size_category",
+          "original_phrase": "queen",
+          "normalized_value": "queen",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_size_category",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "398": {
+      "query_id": 398,
+      "raw_query": "super bright lights",
+      "query_class": "Pendant Lights",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "399": {
+      "query_id": 399,
+      "raw_query": "12v dirt bike",
+      "query_class": "Ride-On Toys",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "400": {
+      "query_id": 400,
+      "raw_query": "small ladies rocker swivel recliner",
+      "query_class": "Recliners",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "401": {
+      "query_id": 401,
+      "raw_query": "glass lsmp shades",
+      "query_class": "Lighting Shades",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "material",
+          "original_phrase": "glass",
+          "normalized_value": "glass",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_material",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "402": {
+      "query_id": 402,
+      "raw_query": "modern farmhouse lighting semi flush mount",
+      "query_class": "Flush Mount Lighting",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "403": {
+      "query_id": 403,
+      "raw_query": "wood rack wide",
+      "query_class": "Log Storage",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "material",
+          "original_phrase": "wood",
+          "normalized_value": "wood",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_material",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "404": {
+      "query_id": 404,
+      "raw_query": "large cushion outdoor chair",
+      "query_class": "Furniture Cushions",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "405": {
+      "query_id": 405,
+      "raw_query": "queen ann style living room chair",
+      "query_class": "Accent Chairs",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "size_category",
+          "original_phrase": "queen",
+          "normalized_value": "queen",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_size_category",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "406": {
+      "query_id": 406,
+      "raw_query": "refrigerator with ice an water in door",
+      "query_class": "Refrigerators",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "407": {
+      "query_id": 407,
+      "raw_query": "huge bookcase",
+      "query_class": "Bookcases",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "408": {
+      "query_id": 408,
+      "raw_query": "girl reading statue",
+      "query_class": "Garden Statues",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "409": {
+      "query_id": 409,
+      "raw_query": "teal chair",
+      "query_class": "Accent Chairs",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "color",
+          "original_phrase": "teal",
+          "normalized_value": "teal",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "410": {
+      "query_id": 410,
+      "raw_query": "pool floats",
+      "query_class": "Lawn Games",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "411": {
+      "query_id": 411,
+      "raw_query": "outdoor clock",
+      "query_class": "Weather Instruments",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "412": {
+      "query_id": 412,
+      "raw_query": "jennie tufted upholstered low profile platform bed",
+      "query_class": "Beds",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "413": {
+      "query_id": 413,
+      "raw_query": "burruss patio sectional with cushions",
+      "query_class": "Outdoor Conversation Sets",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "414": {
+      "query_id": 414,
+      "raw_query": "shower hooks",
+      "query_class": "Shower Curtain Hooks and Accessories",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "415": {
+      "query_id": 415,
+      "raw_query": "toilet paper stand",
+      "query_class": "Toilet Paper Holders",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "416": {
+      "query_id": 416,
+      "raw_query": "wayfair coffee table",
+      "query_class": "Coffee & Cocktail Tables",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "417": {
+      "query_id": 417,
+      "raw_query": "twin bed frame",
+      "query_class": "Bed Frames",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "size_category",
+          "original_phrase": "twin",
+          "normalized_value": "twin",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_size_category",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "418": {
+      "query_id": 418,
+      "raw_query": "writing desk",
+      "query_class": "Desks",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "419": {
+      "query_id": 419,
+      "raw_query": "living room ideas",
+      "query_class": "Living Room Sets",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "420": {
+      "query_id": 420,
+      "raw_query": "tile backsplash",
+      "query_class": "Floor & Wall Tile",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "421": {
+      "query_id": 421,
+      "raw_query": "dining room tables",
+      "query_class": "Dining Tables",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "422": {
+      "query_id": 422,
+      "raw_query": "ergonomic chair",
+      "query_class": "Office Chairs",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "423": {
+      "query_id": 423,
+      "raw_query": "wall shelves",
+      "query_class": "Wall Mounted Shelves",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "424": {
+      "query_id": 424,
+      "raw_query": "wayfair comforters",
+      "query_class": "Bedding Sets",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "425": {
+      "query_id": 425,
+      "raw_query": "side table with storage",
+      "query_class": "End Tables",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "426": {
+      "query_id": 426,
+      "raw_query": "outdoor storage",
+      "query_class": "Deck Boxes",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "427": {
+      "query_id": 427,
+      "raw_query": "lowes tile",
+      "query_class": "Floor & Wall Tile",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "428": {
+      "query_id": 428,
+      "raw_query": "kitchen storage cabinet",
+      "query_class": "Pantry Cabinets",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "429": {
+      "query_id": 429,
+      "raw_query": "gray dresser",
+      "query_class": "Dressers & Chests",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "color",
+          "original_phrase": "gray",
+          "normalized_value": "gray",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "430": {
+      "query_id": 430,
+      "raw_query": "30 inch bathroom vanity",
+      "query_class": "Vanities",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "dimension",
+          "original_phrase": "30 inch",
+          "normalized_value": 30.0,
+          "operator": "APPROX_EQUALS",
+          "extraction_method": "regex_linear_dimension",
+          "confidence": 0.9
+        }
+      ]
+    },
+    "431": {
+      "query_id": 431,
+      "raw_query": "shoe bench entryway",
+      "query_class": "Shoe Storage",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "432": {
+      "query_id": 432,
+      "raw_query": "butcher block island",
+      "query_class": "Kitchen Islands",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "433": {
+      "query_id": 433,
+      "raw_query": "trundle daybed",
+      "query_class": "Daybeds & Guest Beds",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "434": {
+      "query_id": 434,
+      "raw_query": "bathroom lighting",
+      "query_class": "Vanity Lighting",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "435": {
+      "query_id": 435,
+      "raw_query": "shoe closet",
+      "query_class": "Shoe Storage",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "436": {
+      "query_id": 436,
+      "raw_query": "full bed with trundle",
+      "query_class": "Kids Beds",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "size_category",
+          "original_phrase": "full",
+          "normalized_value": "full",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_size_category",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "437": {
+      "query_id": 437,
+      "raw_query": "kitchen islands with seating",
+      "query_class": "Kitchen Islands",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "438": {
+      "query_id": 438,
+      "raw_query": "indoor water fountain",
+      "query_class": "Fountains",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "439": {
+      "query_id": 439,
+      "raw_query": "parsons chairs",
+      "query_class": "Dining Chairs",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "440": {
+      "query_id": 440,
+      "raw_query": "wood bar stools",
+      "query_class": "Bar Stools",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "material",
+          "original_phrase": "wood",
+          "normalized_value": "wood",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_material",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "441": {
+      "query_id": 441,
+      "raw_query": "desk for kids",
+      "query_class": "Kids Desks",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "442": {
+      "query_id": 442,
+      "raw_query": "above toilet cabinet",
+      "query_class": "Bathroom Storage",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "443": {
+      "query_id": 443,
+      "raw_query": "patio design",
+      "query_class": "Outdoor Conversation Sets",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "444": {
+      "query_id": 444,
+      "raw_query": "outdoor lounge chair",
+      "query_class": "Patio Chaise Lounges",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "445": {
+      "query_id": 445,
+      "raw_query": "chaise lounge couch",
+      "query_class": "Sectionals",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "446": {
+      "query_id": 446,
+      "raw_query": "card table",
+      "query_class": "Folding Tables",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "447": {
+      "query_id": 447,
+      "raw_query": "tall buffet cabinet",
+      "query_class": "Sideboards & Buffets",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "448": {
+      "query_id": 448,
+      "raw_query": "bed side table",
+      "query_class": "End Tables",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "449": {
+      "query_id": 449,
+      "raw_query": "living room designs",
+      "query_class": "Living Room Sets",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "451": {
+      "query_id": 451,
+      "raw_query": "aiden black velvet bed",
+      "query_class": "Beds",
+      "has_constraints": true,
+      "constraint_count": 2,
+      "constraints": [
+        {
+          "attribute": "color",
+          "original_phrase": "black",
+          "normalized_value": "black",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        },
+        {
+          "attribute": "material",
+          "original_phrase": "velvet",
+          "normalized_value": "velvet",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_material",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "452": {
+      "query_id": 452,
+      "raw_query": "day bed indian",
+      "query_class": "Daybeds & Guest Beds",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "453": {
+      "query_id": 453,
+      "raw_query": "midcentury tv unit",
+      "query_class": "TV Stands & Entertainment Centers",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "454": {
+      "query_id": 454,
+      "raw_query": "carpet 5x6",
+      "query_class": "Area Rugs",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "dimension",
+          "original_phrase": "5x6",
+          "normalized_value": {
+            "width": 5.0,
+            "depth": 6.0
+          },
+          "operator": "APPROX_EQUALS",
+          "extraction_method": "regex_2d_dimensions",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "455": {
+      "query_id": 455,
+      "raw_query": "deer coat hooks",
+      "query_class": "Coat Racks and Hooks",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "456": {
+      "query_id": 456,
+      "raw_query": "wall design shelf",
+      "query_class": "Wall Mounted Shelves",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "457": {
+      "query_id": 457,
+      "raw_query": "5 gang light switch",
+      "query_class": "Wall Plates",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "458": {
+      "query_id": 458,
+      "raw_query": "bubble guppies chair",
+      "query_class": "Dining Chairs",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "459": {
+      "query_id": 459,
+      "raw_query": "tye dye duvet cover",
+      "query_class": "Bedding Sets",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "460": {
+      "query_id": 460,
+      "raw_query": "small wardrobe grey",
+      "query_class": "Armoires & Wardrobes",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "color",
+          "original_phrase": "grey",
+          "normalized_value": "gray",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "461": {
+      "query_id": 461,
+      "raw_query": "luau string lights",
+      "query_class": "String Lights",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "462": {
+      "query_id": 462,
+      "raw_query": "large bases",
+      "query_class": "Patio Umbrella Stands & Bases",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "463": {
+      "query_id": 463,
+      "raw_query": "bistro sets patio",
+      "query_class": "Patio Dining Sets",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "464": {
+      "query_id": 464,
+      "raw_query": "cake cutlery",
+      "query_class": "Flatware Serving Pieces",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "465": {
+      "query_id": 465,
+      "raw_query": "white abstract",
+      "query_class": "Area Rugs",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "color",
+          "original_phrase": "white",
+          "normalized_value": "white",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_color",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "466": {
+      "query_id": 466,
+      "raw_query": "rock climbing wall kids",
+      "query_class": "Swing Set Accessories",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "467": {
+      "query_id": 467,
+      "raw_query": "town & country living curtains",
+      "query_class": "Curtains & Drapes",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "468": {
+      "query_id": 468,
+      "raw_query": "glow in the dark silent wall clock",
+      "query_class": "Wall Clocks",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "469": {
+      "query_id": 469,
+      "raw_query": "garage sports storage rack",
+      "query_class": "Bike And Sport Racks",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "470": {
+      "query_id": 470,
+      "raw_query": "elephant framed",
+      "query_class": "Wall Art",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "471": {
+      "query_id": 471,
+      "raw_query": "adjustable height artist stool",
+      "query_class": "Bar Stools",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "472": {
+      "query_id": 472,
+      "raw_query": "window wall accent",
+      "query_class": "Wall D\u00e9cor",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "473": {
+      "query_id": 473,
+      "raw_query": "chair pillow cushion",
+      "query_class": "Furniture Cushions",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "474": {
+      "query_id": 474,
+      "raw_query": "48 inch bathroom vanity with trough sink",
+      "query_class": "Vanities",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "dimension",
+          "original_phrase": "48 inch",
+          "normalized_value": 48.0,
+          "operator": "APPROX_EQUALS",
+          "extraction_method": "regex_linear_dimension",
+          "confidence": 0.9
+        }
+      ]
+    },
+    "475": {
+      "query_id": 475,
+      "raw_query": "rattan truck",
+      "query_class": "Ride-On Toys",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "material",
+          "original_phrase": "rattan",
+          "normalized_value": "wicker",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_material",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "476": {
+      "query_id": 476,
+      "raw_query": "hardwood beds",
+      "query_class": "Beds",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "478": {
+      "query_id": 478,
+      "raw_query": "worn leather office chair",
+      "query_class": "Office Chairs",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "material",
+          "original_phrase": "leather",
+          "normalized_value": "leather",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_material",
+          "confidence": 0.95
+        }
+      ]
+    },
+    "479": {
+      "query_id": 479,
+      "raw_query": "garage door mail slot",
+      "query_class": "Mailboxes",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "480": {
+      "query_id": 480,
+      "raw_query": "pictures to hang over fireplace",
+      "query_class": "Wall Art",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "481": {
+      "query_id": 481,
+      "raw_query": "emma headboard",
+      "query_class": "Headboards",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "482": {
+      "query_id": 482,
+      "raw_query": "48 inch kitchen hood",
+      "query_class": "Range Hoods",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "dimension",
+          "original_phrase": "48 inch",
+          "normalized_value": 48.0,
+          "operator": "APPROX_EQUALS",
+          "extraction_method": "regex_linear_dimension",
+          "confidence": 0.9
+        }
+      ]
+    },
+    "483": {
+      "query_id": 483,
+      "raw_query": "rustic twig",
+      "query_class": "Faux Plants and Trees",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "484": {
+      "query_id": 484,
+      "raw_query": "nespresso vertuo next premium by breville with aeroccino",
+      "query_class": "Espresso Machines",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "brand",
+          "original_phrase": "breville",
+          "normalized_value": "breville",
+          "operator": "EQUALS",
+          "extraction_method": "rule_by_prefix",
+          "confidence": 0.9
+        }
+      ]
+    },
+    "485": {
+      "query_id": 485,
+      "raw_query": "pedistole sink",
+      "query_class": "Kitchen Sinks",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "486": {
+      "query_id": 486,
+      "raw_query": "54 in bench cushion",
+      "query_class": "Furniture Cushions",
+      "has_constraints": false,
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "487": {
+      "query_id": 487,
+      "raw_query": "rack glass",
+      "query_class": "Candle Holders",
+      "has_constraints": true,
+      "constraint_count": 1,
+      "constraints": [
+        {
+          "attribute": "material",
+          "original_phrase": "glass",
+          "normalized_value": "glass",
+          "operator": "EQUALS",
+          "extraction_method": "lexicon_material",
+          "confidence": 0.95
+        }
+      ]
+    }
+  }
+}
